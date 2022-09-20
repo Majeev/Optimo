@@ -6,4 +6,13 @@
 
 body {
     background-color: #008000;    
+    height: 100vh;
+    max-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #808000;
+    height: 5%;
+    border-bottom: 3px solid black;
 }
