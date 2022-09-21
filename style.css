@@ -35,13 +35,20 @@ header {
   width: 300px;
 }
 
-.square_left,
-.square_right {
+.square_top,
+.square_bottom {
   aspect-ratio: 1/1;
   background-color: #ff0000;
   border: var(--border);
   margin: 10px 0px 50px 65px;
   width: 120px;
+}
+
+.square_top {
+  animation: punchTop 5s 3 2s;
+}
+.square_bottom {
+  animation: punchBottom 5s 3 2s;
 }
 
 /* === FIGURES SECTION === */
@@ -71,6 +78,7 @@ header {
   height: 90px;
   margin: 0 15px;
   width: 95px;
+ 
 }
 
 /* === RECTANGLE SECTION === */
@@ -143,5 +151,31 @@ header {
   .rectangle {
     background-color: #0000fa;
     translate: -50% 0;
+  }
+}
+
+/* === ANIMATIONS === */
+
+@keyframes punchTop {
+  10% {
+    translate: 0 25%;
+  }
+  20% {
+    border-bottom: 10px solid yellow; 
+  }
+  50% {
+    translate: 0 -100%;
+  }
+}
+
+@keyframes punchBottom {
+  10% {
+    translate: 0 -25%;
+  }
+  20% {
+    border-top: 10px solid yellow; 
+  }
+  50% {
+    translate: 0 100%
   }
 }
