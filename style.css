@@ -12,7 +12,6 @@
 
 body {
   background-color: #008000;
-  overflow-y: hidden;
 }
 
 header {
@@ -34,7 +33,6 @@ header {
   height: fit-content;
   rotate: 45deg;
   width: 300px;
-  grid-area: squares;
 }
 
 .square_left,
@@ -50,7 +48,6 @@ header {
 
 .figures__wrapper {
   width: 300px;
-  grid-area: figures;
 }
 
 .figures__container {
@@ -79,7 +76,7 @@ header {
 /* === RECTANGLE SECTION === */
 
 .rectangle__wrapper {
-  max-width: 301px;
+  width: 301px;
 }
 
 .rectangle {
@@ -93,7 +90,7 @@ header {
   position: relative;
   text-align: center;
   translate: -60% 57%;
-  width: 230px;
+  width: 200px;
 }
 
 .rectangle span {
@@ -113,9 +110,13 @@ header {
       "squares rectangle"
       "figures rectangle";
   }
-  
+
   .squares__wrapper {
     grid-area: squares;
+  }
+
+  .figures__wrapper {
+    grid-area: figures;
   }
 
   .rectangle__wrapper {
@@ -125,8 +126,22 @@ header {
   .rectangle {
     background-color: #c83737;
   }
+}
 
-  .figures__wrapper {
-    grid-area: figures;
+/* === VIEW SMALL === */
+
+@media (max-width: 583px) {
+  .content__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figures__container {
+    margin: 0;
+  }
+
+  .rectangle {
+    background-color: #0000fa;
+    translate: -50% 0;
   }
 }
