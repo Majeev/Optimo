@@ -83,10 +83,6 @@ header {
 
 /* === RECTANGLE SECTION === */
 
-/* .rectangle__wrapper {
-  width: 301px;
-} */
-
 .rectangle {
   background-color: white;
   border: var(--border);
