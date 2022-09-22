@@ -83,9 +83,9 @@ header {
 
 /* === RECTANGLE SECTION === */
 
-.rectangle__wrapper {
+/* .rectangle__wrapper {
   width: 301px;
-}
+} */
 
 .rectangle {
   background-color: white;
@@ -147,7 +147,9 @@ header {
   .figures__container {
     margin: 0;
   }
-
+  .rectangle__wrapper {
+   width:300px
+  }
   .rectangle {
     background-color: #0000fa;
     translate: -50% 0;
